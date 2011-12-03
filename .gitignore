@@ -8,3 +8,7 @@ user/cache/*
 user/files/*
 user/classes/*
 .DS_Store
+*.html~
+*.php~
+*.xml~
+*.js~
