@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pluggable type="plugin">
+	<name>GoogleAnalytics</name>
+	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</license>
+	<author url="http://iamgraham.net/plugins">Graham Christensen</author>
+	<version>0.5.2</version>
+	<url>http://iamgraham.net/plugins</url>
+	<description>Automatically adds Google Analytics code to the bottom of your webpage.</description>
+	<copyright>2009</copyright>
+</pluggable>
+
