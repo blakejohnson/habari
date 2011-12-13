@@ -506,14 +506,14 @@ class Defensio extends Plugin
 	 * Sort by spaminess when the status:spam filter is set
 	 * @todo use DB filters to sort from DB
 	 */
-	public function filter_comments_actions( $actions, &$comments )
+	/*public function filter_comments_actions( $actions, &$comments )
 	{
 		if ( preg_match( '/status:\s*spam/i', Controller::get_handler()->handler_vars['search'] )
 			|| Comment::status(Controller::get_handler()->handler_vars['status']) == Comment::status('spam') ) {
 			usort( $comments, 'Defensio::sort_by_spaminess' );
 		}
 		return $actions;
-	}
+	}*/
 
 	public static function sort_by_spaminess( $a, $b )
 	{
