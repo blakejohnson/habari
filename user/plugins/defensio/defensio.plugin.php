@@ -506,6 +506,9 @@ class Defensio extends Plugin
 	 * Sort by spaminess when the status:spam filter is set
 	 * @todo use DB filters to sort from DB
 	 */
+	/* Throws an error when $comments is passed by reference. However, the entire purpose
+	 * of the filter is to reorder the comments. Commenting out until a suitable fix can
+	 * be found.
 	public function filter_comments_actions( $actions, $comments )
 	{
 		if ( preg_match( '/status:\s*spam/i', Controller::get_handler()->handler_vars['search'] )
@@ -513,7 +516,7 @@ class Defensio extends Plugin
 			usort( $comments, 'Defensio::sort_by_spaminess' );
 		}
 		return $actions;
-	}
+	}*/
 
 	public static function sort_by_spaminess( $a, $b )
 	{
